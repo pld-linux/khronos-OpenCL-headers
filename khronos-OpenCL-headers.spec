@@ -27,6 +27,7 @@ Source7:	http://www.khronos.org/registry/cl/api/1.2/opencl.h
 ## SourceXX-md5:	f53b2ffef7d9197fcc3cf80df2059d35
 #SourceXX:	http://www.khronos.org/registry/cl/api/1.2/cl_dx9_media_sharing.h
 ## SourceXX-md5:	1ad86f41fd01f3ba0388f5b610e65a07
+Patch0:		AMD_extensions.patch
 URL:		http://www.khronos.org/registry/cl/
 Obsoletes:	Mesa-libOpenCL-devel
 Conflicts:	Mesa-libOpenCL-devel
@@ -38,8 +39,11 @@ OpenCL (Open Computing Language) header files.
 
 %prep
 %setup -q -cT
+
 cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} \
 	%{SOURCE5} %{SOURCE6} %{SOURCE7} .
+
+%patch0 -p1
 
 %build
 
