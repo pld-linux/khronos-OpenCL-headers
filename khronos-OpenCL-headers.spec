@@ -28,7 +28,6 @@ Source7:	http://www.khronos.org/registry/cl/api/1.2/opencl.h
 #SourceXX:	http://www.khronos.org/registry/cl/api/1.2/cl_dx9_media_sharing.h
 ## SourceXX-md5:	1ad86f41fd01f3ba0388f5b610e65a07
 URL:		http://www.khronos.org/registry/cl/
-Provides:	OpenCL-devel = 1.2
 Obsoletes:	Mesa-libOpenCL-devel
 Conflicts:	Mesa-libOpenCL-devel
 BuildArch:	noarch
