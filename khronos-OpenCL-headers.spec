@@ -27,8 +27,6 @@ Source9:	http://www.khronos.org/registry/cl/api/1.2/cl_platform.h
 Source10:	http://www.khronos.org/registry/cl/api/1.2/opencl.h
 # Source10-md5:	6f511443ae9d2f85146e0c35221c1e7d
 URL:		http://www.khronos.org/registry/cl/
-Provides:	OpenCL-devel = 1.0
-Provides:	OpenCL-devel = 1.1
 Provides:	OpenCL-devel = 1.2
 Obsoletes:	Mesa-libOpenCL-devel
 Conflicts:	Mesa-libOpenCL-devel
