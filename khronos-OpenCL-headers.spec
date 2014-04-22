@@ -2,7 +2,7 @@ Summary:	OpenCL (Open Computing Language) header files
 Summary(pl.UTF-8):	Pliki nagłówkowe OpenCL (Open Computing Language)
 Name:		khronos-OpenCL-headers
 Version:	1.2
-Release:	0.1
+Release:	1
 License:	MIT-like
 Group:		Libraries
 Source0:	http://www.khronos.org/registry/cl/api/1.2/cl.h
