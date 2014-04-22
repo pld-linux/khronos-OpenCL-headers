@@ -1,4 +1,5 @@
 Summary:	OpenCL (Open Computing Language) header files
+Summary(pl.UTF-8):	Pliki nagłówkowe OpenCL (Open Computing Language)
 Name:		khronos-OpenCL-headers
 Version:	1.2
 Release:	0.1
@@ -29,13 +30,15 @@ Source7:	http://www.khronos.org/registry/cl/api/1.2/opencl.h
 ## SourceXX-md5:	1ad86f41fd01f3ba0388f5b610e65a07
 Patch0:		AMD_extensions.patch
 URL:		http://www.khronos.org/registry/cl/
-Obsoletes:	Mesa-libOpenCL-devel
 Conflicts:	Mesa-libOpenCL-devel
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 OpenCL (Open Computing Language) header files.
+
+%description -l pl.UTF-8
+Pliki nagłówkowe języka obliczeń OpenCL (Open Computing Language).
 
 %prep
 %setup -q -cT
@@ -52,9 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_includedir}/CL
 install *.h $RPM_BUILD_ROOT%{_includedir}/CL
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
 %defattr(644,root,root,755)
 %{_includedir}/CL
-
-%clean
-rm -rf $RPM_BUILD_ROOT
