@@ -29,7 +29,6 @@ Source6:	https://raw.githubusercontent.com/KhronosGroup/OpenCL-Headers/opencl21/
 # This actually belongs to OpenCL 1.2, included for backward compatibility (OpenCL 2+ uses cl2.hpp)
 Source50:	https://www.khronos.org/registry/cl/api/2.1/cl.hpp
 # Source50-md5:	f2c8bee05e5a84ea8282b7b95646c515
-# Source7-md5:	f2c8bee05e5a84ea8282b7b95646c515
 # OpenCL 2+ binding from CLHPP project
 #Source51Download: https://www.github.com/KhronosGroup/OpenCL-CLHPP/releases
 Source51:	https://github.com/KhronosGroup/OpenCL-CLHPP/releases/download/v2.0.9/cl2.hpp
