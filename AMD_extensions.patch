@@ -2,9 +2,10 @@ Author: Vincent Danjean <vdanjean@debian.org>
 Subject: include AMD extensions in opencl-headers
 Bug-Debian: http://bugs.debian.org/695136
 
---- a/cl_ext.h
-+++ b/cl_ext.h
-@@ -170,9 +173,45 @@
+diff -urNp -x '*.orig' khronos-OpenCL-headers-2.2.org/cl_ext.h khronos-OpenCL-headers-2.2/cl_ext.h
+--- khronos-OpenCL-headers-2.2.org/cl_ext.h	2024-12-23 11:52:54.024397720 +0100
++++ khronos-OpenCL-headers-2.2/cl_ext.h	2024-12-23 11:52:54.064398175 +0100
+@@ -179,9 +179,45 @@ typedef CL_API_ENTRY cl_int (CL_API_CALL
  #define CL_DEVICE_INTEGRATED_MEMORY_NV              0x4006
  
  /*********************************
@@ -48,5 +49,5 @@ Bug-Debian: http://bugs.debian.org/695136
 +**************************/
 +#define CL_CONTEXT_OFFLINE_DEVICES_AMD              0x403F
  
- #ifdef CL_VERSION_1_1
-    /***********************************
+ /*********************************
+ * cl_arm_printf extension
