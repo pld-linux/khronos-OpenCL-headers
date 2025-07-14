@@ -51,7 +51,7 @@ Pliki nagłówkowe języka obliczeń OpenCL (Open Computing Language).
 cp %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} %{SOURCE4} %{SOURCE5} %{SOURCE6} \
 	%{SOURCE50} %{SOURCE51} .
 
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 
